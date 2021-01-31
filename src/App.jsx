@@ -216,8 +216,8 @@ function Planting() {
       <TransitionGroup className="planting-pic">
         {
           id.map(id => (
-            <Transition timeout={1600}>
-              { status => <SwitchPlanting key={id} direction={direction.current} src={`img/planting/${data[id].cg[0]}`} status={status}/> }
+            <Transition key={id} timeout={1500}>
+              { status => <SwitchPlanting id={id} key={id} direction={direction.current} src={`img/planting/${data[id].cg[0]}`} status={status}/> }
             </Transition>
           ))
         }
@@ -232,7 +232,7 @@ function Planting() {
 // 立绘切换
 function SwitchPlanting(props) {
   const ref = useRef(null)
-  useEffect(() => { 
+  useEffect(() => {
     if (props.status == 'entering') {
       anime({
         targets: ref.current,
@@ -243,6 +243,7 @@ function SwitchPlanting(props) {
         duration: 1500
       })
     } else if (props.status == 'exiting') {
+      anime.remove(ref.current)
       anime({
         targets: ref.current,
         translateX: [0, `${props.direction == 'left' ?? '-'}30`],
