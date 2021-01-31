@@ -178,7 +178,7 @@ function CG() {
     <div className="cg">
     <div className="cg-small">
       {
-        Array(2).fill('').map(item => (
+        Array(3).fill('').map(item => (
           <div className="cg-small-box">
             <div className="cg-small-pic">
               <img src="img/cg/test1.jpg" alt=""/>
