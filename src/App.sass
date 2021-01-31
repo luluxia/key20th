@@ -1,0 +1,266 @@
+// 全局
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+// 整体
+.content
+  display: flex
+  justify-content: center
+  align-items: center
+  height: calc(100vh - 8em)
+.box
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  width: 80em
+  height: 34em
+// 边框处理
+.border
+  pointer-events: none
+.border-light, .border-group, .border-bold
+  position: absolute
+.border-light
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  border: 0.5px solid #a28c50
+  z-index: 2
+  pointer-events: none
+.border-group
+  top: -7px
+  bottom: -7px
+  left: -7px
+  right: -7px
+  overflow: hidden
+  z-index: 2
+.border-bold
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  border: 3px solid #a28c50
+.round-left-top, .round-left-bottom, .round-right-top, .round-right-bottom
+  width: 40px
+  height: 40px
+  border: 3px solid #a28c50
+  position: absolute
+  border-radius: 50%
+  background: linear-gradient(0deg, #ffffff00 40%, white 41%, white 60%, #ffffff00 61%), linear-gradient(90deg,#ffffff00 40%, white 41%, white 60%, #ffffff00 61%)
+  z-index: 1
+.round-left-top
+  left: -20px
+  top: -20px
+.round-left-bottom
+  left: -20px
+  bottom: -20px
+.round-right-top
+  right: -20px
+  top: -20px
+.round-right-bottom
+  right: -20px
+  bottom: -20px
+// 作品
+.products
+  position: absolute
+  top: -1.5em
+  z-index: 2
+  li
+    display: inline-block
+    list-style: none
+    color: #fff
+    background: rgb(94 40 110 / 80%)
+    margin: 0 0.5em
+    padding: 0.5rem 1rem
+    border-radius: 0.2rem
+    backdrop-filter: blur(1px)
+    font-size: 0.8em
+    letter-spacing: 0.1em
+// CG
+.cg
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  position: absolute
+  top: 0
+  width: 100%
+.cg-small
+  display: flex
+  justify-content: space-between
+  width: 54.8em
+.cg-small-box img
+  width: 27.3em
+  height: 14em
+  object-fit: cover
+.cg-big-box img
+  width: 25em
+  height: 34em
+  object-fit: cover
+// 立绘
+.planting
+  display: contents
+  position: absolute
+.planting-pic
+  display: contents
+  img
+    position: absolute
+    z-index: 1
+    bottom: -5px
+    margin-left: 15em
+    max-height: 30em
+    // opacity: 0
+.planting-change
+  display: flex
+  position: absolute
+  left: 50%
+  bottom: 0
+  margin-left: 18em
+  padding: 0.5em
+  padding-left: 2em
+  border-top: 1px dashed #a28c50
+  z-index: 0
+  p
+    color: #444
+    font-size: 0.8em
+    margin-top: 0.2em
+.change-icon
+  height: 1.5em
+  margin-right: 0.5em
+// 角色信息
+.info
+  display: flex
+  flex-direction: column
+  position: absolute
+  top: 15em
+  left: 3em
+  width: 35em
+.info-title
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  height: 4.5em
+.info-birth
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0.5em 1em
+  margin-bottom: 0.5em
+  border: 1px solid #a28c50
+  border-radius: 2em
+  background: rgb(255 255 255 / 50%)
+  color: #675114
+  font-size: 0.8em
+  font-weight: bold
+  letter-spacing: 0.1em
+  img
+    height: 1.4em
+    margin-right: 0.5em
+.info-name
+  display: contents
+  h1
+    position: absolute
+    width: fit-content
+    margin-right: 0.5rem
+    font-size: 3em
+    color: #212121
+.name-zh
+  position: relative
+.name-kana
+  position: absolute
+  width: 100%
+  font-size: 0.2em
+  right: 0
+  top: -0.75em
+  padding: 0 0.5em
+  font-weight: normal
+.info-romaji
+  position: absolute
+  opacity: 0.1
+  p
+    position: absolute
+    font-weight: bold
+    white-space: nowrap
+    font-size: 4em
+    right: 0
+    bottom: -1.5rem
+    z-index: -1
+.info-intro
+  p
+    margin: 0.5em
+    padding: 0.5em
+    border-bottom: 2px dotted #a28c50
+    border-top: 2px dotted #a28c50
+    text-align: justify
+    text-indent: 2em
+    font-size: 0.8em
+    line-height: 1.5em
+    color: #555
+.info-list
+  font-size: 0.8em
+  width: 100%
+  margin-left: 0.5em
+  li
+    display: inline-block
+    list-style: none
+    margin: 0.5em
+    color: #444
+  span
+    color: #a28c50
+    font-size: 0.8em
+    margin-right: 0.5em
+    &::before
+      content: '>'
+      font-weight: bold
+// 时间轴
+.slider
+  position: absolute
+  overflow: hidden
+  bottom: 0
+  width: 100vw
+  height: 8em
+  background-color: rgba(238, 238, 238, 0.5)
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='20' height='20' fill-opacity='0.6' fill='%23d7d7d7'/%3E%3C/svg%3E")
+  z-index: 2
+.slider-content
+  width: fit-content
+  height: 100%
+  user-select: none
+  transition-property: transform
+.slider-list
+  display: flex
+  align-items: center
+  height: 100%
+  li
+    position: relative
+    list-style: none
+    margin: 0 1em
+  p
+    position: absolute
+    bottom: 0
+    right: 0
+    font-size: 0.8em
+    padding: 0.2em 0.3em
+    border-radius: 0.2em
+    background: #888
+    color: #fff
+.slider-icon
+  display: flex
+  justify-content: center
+  overflow: hidden
+  width: 5em
+  height: 5em
+  object-fit: cover
+  border-radius: 50%
+  border: 2px solid #888
+  img
+    height: 6em
+    pointer-events: none
+.slider-month
+  font-weight: bold
+  font-size: 2em
+  color: #888
+  width: max-content
+.slider-move
+  transition: transform 0.3s

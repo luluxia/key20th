@@ -1,0 +1,21 @@
+{
+  "name": "key20th",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "lodash": "^4.17.20",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-transition-group": "^4.4.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-refresh": "^1.1.0",
+    "vite": "^2.0.0-beta.48",
+    "sass": "^1.32.5"
+  }
+}
