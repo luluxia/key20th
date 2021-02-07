@@ -80,12 +80,15 @@
     letter-spacing: 0.1em
 // CG
 .cg
+  display: contents
+.cg-content
   display: flex
   flex-direction: row
   justify-content: space-between
   position: absolute
   top: 0
   width: 100%
+  overflow: hidden
 .cg-small
   display: flex
   justify-content: space-between
@@ -94,10 +97,12 @@
   width: 18.1em
   height: 12em
   object-fit: cover
+  background: #fff
 .cg-big-box img
   width: 25em
   height: 34em
   object-fit: cover
+  background: #fff
 // 立绘
 .planting
   display: contents
@@ -205,6 +210,18 @@
     font-size: 0.8em
     line-height: 1.5em
     color: #555
+  div
+    position: absolute
+.intro-enter
+  opacity: 0
+.intro-enter-active
+  opacity: 1
+  transition: opacity .5s
+.intro-exit
+  opacity: 1
+.intro-exit-active
+  opacity: 0
+  transition: opacity .5s
 .info-list
   font-size: 0.8em
   width: 100%

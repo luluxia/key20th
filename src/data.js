@@ -21,7 +21,7 @@ let data = [
     color: '#6c6c9a',
     from: ['CLANNAD', '智代After ~It\'s a Wonderful Life~'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -32,7 +32,7 @@ let data = [
     color: '#dc3c78',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -43,7 +43,7 @@ let data = [
     color: '#8241a5',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -54,7 +54,7 @@ let data = [
     color: '#4646aa',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -65,7 +65,7 @@ let data = [
     color: '#3ca0b4',
     from: ['CLANNAD', '智代After ~It\'s a Wonderful Life~'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -76,7 +76,7 @@ let data = [
     color: '#3C6E3C',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -87,7 +87,7 @@ let data = [
     color: '#826432',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -98,7 +98,7 @@ let data = [
     color: '#B450C8',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -109,7 +109,7 @@ let data = [
     color: '#996a4b',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -120,7 +120,7 @@ let data = [
     color: '#4888C5',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -131,7 +131,7 @@ let data = [
     color: '#96283C',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -142,7 +142,7 @@ let data = [
     color: '#DC821E',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -153,7 +153,7 @@ let data = [
     color: '#42AA82',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -164,7 +164,7 @@ let data = [
     color: '#939D52',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -175,7 +175,7 @@ let data = [
     color: '#FFC000',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -186,7 +186,7 @@ let data = [
     color: '#4866A6',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -197,7 +197,7 @@ let data = [
     color: '#3AC4B9',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -208,7 +208,7 @@ let data = [
     color: '#7F7F7F',
     from: ['CLANNAD'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -219,7 +219,7 @@ let data = [
     color: '#5e5e7c',
     from: ['智代After ~It\'s a Wonderful Life~'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -230,7 +230,7 @@ let data = [
     color: '#d98259',
     from: ['智代After ~It\'s a Wonderful Life~'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -241,7 +241,7 @@ let data = [
     color: '#c63c3f',
     from: ['智代After ~It\'s a Wonderful Life~'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -252,7 +252,7 @@ let data = [
     color: '#5A4180',
     from: ['AIR'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -263,7 +263,7 @@ let data = [
     color: '#E7BD68',
     from: ['AIR'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -274,7 +274,7 @@ let data = [
     color: '#222558',
     from: ['AIR'],
     other: [
-      '待补充'
+
     ]
   },
   {
@@ -285,7 +285,7 @@ let data = [
     color: '#654F4F',
     from: ['AIR'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -296,7 +296,7 @@ let data = [
     color: '#772C35',
     from: ['AIR'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -307,7 +307,7 @@ let data = [
     color: '#1D204C',
     from: ['AIR'],
     other: [
-      '待补充'
+      ['test', 'test']
     ]
   },
   {
@@ -318,7 +318,7 @@ let data = [
     color: '#993446',
     from: ['AIR'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -329,7 +329,7 @@ let data = [
     color: '#D6C892',
     from: ['AIR'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -340,7 +340,7 @@ let data = [
     color: '#45427A',
     from: ['AIR'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -351,7 +351,7 @@ let data = [
     color: '#667770',
     from: ['AIR'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -362,7 +362,7 @@ let data = [
     color: '#905E38',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -373,7 +373,7 @@ let data = [
     color: '#b86735',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -384,7 +384,7 @@ let data = [
     color: '#626BB8',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -395,7 +395,7 @@ let data = [
     color: '#F77D33',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -406,7 +406,7 @@ let data = [
     color: '#78653B',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -417,7 +417,7 @@ let data = [
     color: '#5F6099',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -428,7 +428,7 @@ let data = [
     color: '#AF8B64',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -439,7 +439,7 @@ let data = [
     color: '#726D59',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -450,7 +450,7 @@ let data = [
     color: '#A85D7E',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -461,7 +461,7 @@ let data = [
     color: '#6A62AD',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -472,7 +472,7 @@ let data = [
     color: '#EDAB5D',
     from: ['Kanon'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -483,7 +483,7 @@ let data = [
     color: '#876e58',
     from: ['Little Busters!', 'Kud Wafter'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -494,7 +494,7 @@ let data = [
     color: '#b87b6f',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -505,7 +505,7 @@ let data = [
     color: '#9a5c4d',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -516,7 +516,7 @@ let data = [
     color: '#d06ea1',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -527,7 +527,7 @@ let data = [
     color: '#d1b5cc',
     from: ['Little Busters!', 'Kud Wafter'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -538,7 +538,7 @@ let data = [
     color: '#5D5B66',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -549,7 +549,7 @@ let data = [
     color: '#78aeeb',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -560,7 +560,7 @@ let data = [
     color: '#d06ea1',
     from: ['Little Busters!', 'Kud Wafter'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -571,7 +571,7 @@ let data = [
     color: '#9179ae',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -582,7 +582,7 @@ let data = [
     color: '#d3a981',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -593,7 +593,7 @@ let data = [
     color: '#c17c6c',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -604,7 +604,7 @@ let data = [
     color: '#5e616c',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -615,7 +615,7 @@ let data = [
     color: '#a4a097',
     from: ['Little Busters!'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -626,7 +626,7 @@ let data = [
     color: '#df6c93',
     from: ['Kud Wafter'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -637,7 +637,7 @@ let data = [
     color: '#797997',
     from: ['Kud Wafter'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -648,7 +648,7 @@ let data = [
     color: '#8c4e58',
     from: ['Kud Wafter'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -659,7 +659,7 @@ let data = [
     color: '#a07776',
     from: ['Kud Wafter'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -670,7 +670,7 @@ let data = [
     color: '#c65815',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -681,7 +681,7 @@ let data = [
     color: '#aa1c3e',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -692,7 +692,7 @@ let data = [
     color: '#faa578',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -703,7 +703,7 @@ let data = [
     color: '#a4746a',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -714,7 +714,7 @@ let data = [
     color: '#da9c3f',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -725,7 +725,7 @@ let data = [
     color: '#8e79a2',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -736,7 +736,7 @@ let data = [
     color: '#dfcfd8',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -747,7 +747,7 @@ let data = [
     color: '#716461',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -758,7 +758,7 @@ let data = [
     color: '#565875',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -769,7 +769,7 @@ let data = [
     color: '#9c1f07',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -780,7 +780,7 @@ let data = [
     color: '#4d3b36',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -791,7 +791,7 @@ let data = [
     color: '#8e8db5',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -802,7 +802,7 @@ let data = [
     color: '#cc2124',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -813,7 +813,7 @@ let data = [
     color: '#fc9239',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -824,7 +824,7 @@ let data = [
     color: '#616161',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -835,7 +835,7 @@ let data = [
     color: '#f699a0',
     from: ['Rewrite'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -846,7 +846,7 @@ let data = [
     color: '#69489d',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -857,7 +857,7 @@ let data = [
     color: '#e8547b',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -868,7 +868,7 @@ let data = [
     color: '#e3a118',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -879,7 +879,7 @@ let data = [
     color: '#389e0e',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -890,7 +890,7 @@ let data = [
     color: '#30b043',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -901,7 +901,7 @@ let data = [
     color: '#ab47a1',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -912,7 +912,7 @@ let data = [
     color: '#c9358b',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -923,7 +923,7 @@ let data = [
     color: '#d32258',
     from: ['Summer Pockets REFLECTION BLUE'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -934,7 +934,7 @@ let data = [
     color: '#fbb14a',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -945,7 +945,7 @@ let data = [
     color: '#86d1d7',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -956,7 +956,7 @@ let data = [
     color: '#e8c09a',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -967,7 +967,7 @@ let data = [
     color: '#99575c',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -978,7 +978,7 @@ let data = [
     color: '#858584',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -989,7 +989,7 @@ let data = [
     color: '#0645ad',
     from: ['Summer Pockets'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1000,7 +1000,7 @@ let data = [
     color: '#ffadce',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1011,7 +1011,7 @@ let data = [
     color: '#534f4e',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1022,7 +1022,7 @@ let data = [
     color: '#44466c',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1033,7 +1033,7 @@ let data = [
     color: '#d5b382',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1044,7 +1044,7 @@ let data = [
     color: '#c33456',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1055,7 +1055,7 @@ let data = [
     color: '#89204d',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1066,7 +1066,7 @@ let data = [
     color: '#994e75',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1077,7 +1077,7 @@ let data = [
     color: '#846272',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1088,7 +1088,7 @@ let data = [
     color: '#4a5161',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1099,7 +1099,7 @@ let data = [
     color: '#8f95a6',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1110,7 +1110,7 @@ let data = [
     color: '#6d4b5a',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   },
   {
@@ -1121,7 +1121,7 @@ let data = [
     color: '#45454f',
     from: ['成神之日'],
     other: [
-      '待补充'
+      
     ]
   }
 ]

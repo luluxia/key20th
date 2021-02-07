@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { TransitionGroup, Transition } from 'react-transition-group'
+import { TransitionGroup, CSSTransition, Transition } from 'react-transition-group'
 import anime from 'animejs'
 import _ from 'lodash'
 import key from './data.js'
@@ -46,7 +46,7 @@ function Slider() {
     if(stateRef.current.drag == 0) {
       stateRef.current.trans = 1
       stateRef.current.offset = document.body.clientWidth / 2 - target.offsetLeft - target.clientWidth / 2
-      sliderContentRef.current.style.transform = `translate(${stateRef.current.offset}px ,0)`
+      sliderContentRef.current.style.transform = `translate3d(${stateRef.current.offset}px ,0px, 0px)`
       sliderContentRef.current.classList.add('slider-move')
       setTimeout(() => {
         stateRef.current.trans = 0
@@ -95,7 +95,7 @@ function Slider() {
       })
       setId([target])
       stateRef.current.offset = center - items[target].offsetLeft - itemWidth
-      sliderContentRef.current.style.transform = `translate(${stateRef.current.offset}px ,0)`
+      sliderContentRef.current.style.transform = `translate3d(${stateRef.current.offset}px ,0px, 0px)`
       sliderContentRef.current.classList.add('slider-move')
       setTimeout(() => {
         sliderContentRef.current.classList.remove('slider-move')
@@ -106,7 +106,7 @@ function Slider() {
   function render() {
     if(stateRef.current.mouseDown && stateRef.current.drag){
       stateRef.current.offset = stateRef.current.offset + ((stateRef.current.past - stateRef.current.change) - stateRef.current.offset) * 0.2
-      document.querySelector('.slider-content').style.transform = `translate(${stateRef.current.offset}px ,0)`
+      document.querySelector('.slider-content').style.transform = `translate3d(${stateRef.current.offset}px ,0px, 0px)`
     }
     requestRef.current = requestAnimationFrame(render)
   }
@@ -174,25 +174,70 @@ function Products() {
 }
 // CG
 function CG() {
+  const { id } = useContext(Context)
   return (
-    <div className="cg">
-    <div className="cg-small">
+    <TransitionGroup className="cg">
       {
-        Array(3).fill('').map(item => (
-          <div className="cg-small-box">
-            <div className="cg-small-pic">
-              <img src="img/cg/test1.jpg" alt=""/>
-            </div>
-          </div>
+        id.map(id => (
+          <Transition key={id} timeout={4000}>
+            { status => <CGTrans id={id} status={status}/> }
+          </Transition>
         ))
       }
-    </div>
-    <div className="cg-big-box">
-      <div className="cg-big-pic">
-        <img src="img/cg/test1.jpg" alt=""/>
+    </TransitionGroup>
+  )
+}
+function CGTrans(props) {
+  const ref = useRef([])
+  useEffect(() => {
+    if (props.status == 'entering') {
+      anime({
+        targets: ref.current,
+        translateX: [100, 0],
+        opacity: [0, 1],
+        easing: "easeOutElastic(1, .9)",
+        duration: 1500,
+        delay: (el, i) => 100 * i
+      })
+    } else if (props.status == 'exiting') {
+      anime.remove(ref.current)
+      anime({
+        targets: ref.current,
+        translateX: [0, -100],
+        opacity: [1, 0],
+        easing: "easeOutExpo",
+        duration: 1000,
+        delay: (el, i) => 100 * i
+      })
+    }
+  }, [props.status])
+  return (
+    <div className="cg-content">
+      <div className="cg-small">
+        {
+          Array(3).fill('').map((item, index) => (
+            <div className="cg-small-box">
+              <div ref={e => {ref.current[index + 1] = e}} className="cg-small-pic">
+                {
+                  data[props.id]?.cg[index + 1] != ' ' ?
+                  <img src={`img/cg/${data[props.id].cg[index + 1]}`} alt=""/> :
+                  <img src="img/other/default.svg" alt=""/>
+                }
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <div className="cg-big-box">
+        <div ref={e => {ref.current[4] = e}} className="cg-big-pic">
+          {
+            data[props.id].cg[4] ?
+            <img src={`img/cg/${data[props.id].cg[index + 1]}`} alt=""/> :
+            <img src="img/other/default.svg" alt=""/>
+          }
+        </div>
       </div>
     </div>
-  </div>
   )
 }
 // 立绘
@@ -281,7 +326,7 @@ function Birth() {
   }, id)
   return (
     <div style={{
-        transform: `translate(-${data[id].name[0].length * 3.375 + 1}rem, 0px)`,
+        transform: `translate3d(-${data[id].name[0].length * 3.375 + 1}rem, 0px, 0px)`,
         opacity: data[id].month == 13 ? 0 : 1
       }} className="info-birth">
       <img src="img/other/cake.svg" alt=""/>
@@ -412,17 +457,30 @@ function RomajiTrans(props) {
 function Intro() {
   const { id } = useContext(Context)
   return (
-    <div className="info-intro">
+    <TransitionGroup className="info-intro">
+      {
+        id.map(id => (
+          <CSSTransition key={id} timeout={1500} classNames="intro">
+            <IntroTrans/>
+          </CSSTransition>
+        ))
+      }
+    </TransitionGroup>
+  )
+}
+function IntroTrans() {
+  const { id } = useContext(Context)
+  return (
+    <div>
       <p>
-        { data[id]?.intro ?? "(｡･∀･)ﾉﾞ嗨，欢迎来到Key Character Birthday Timeline（Key20th Version），本站正并且将长期处于建设中（咕咕咕~），如果你看到了这段话，那说明这位角色的介绍还没有添加，如果你想要为角色补充更多信息、或者发现了信息错误，亦或是想要添加一些新角色的话，欢迎前往GIthub参与补充！" }
+        { data[id]?.intro ?? "(｡･∀･)ﾉﾞ嗨，欢迎来到Key Character Birthday Timeline（Key20th Version），本站正并且将长期处于建设中（咕咕咕~），如果你看到了这段话，那说明这位角色的介绍还没有添加，如果你想要为角色补充更多信息、或者发现了信息错误，或者是想要添加一些新角色的话，欢迎前往GIthub一起参与这个项目的开发！" }
       </p>
       <ul className="info-list">
-        <li><span>CV</span>中原麻衣</li>
-        <li><span>血型</span>A</li>
-        <li><span>身高</span>155cm</li>
-        <li><span>体重</span>43KG</li>
-        <li><span>三维</span>B80W55H81cm</li>
-        <li>{id[0]}</li>
+        {
+          data[id].other.map(item => (
+            <li><span>{item[0]}</span>{item[1]}</li>
+          ))
+        }
       </ul>
     </div>
   )
